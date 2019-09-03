@@ -3,8 +3,8 @@ import { Button } from "antd";
 
 interface Greeting {
   name: string;
-  firstName: string;
-  lastName: string;
+  firstName?: string;
+  lastName?: string;
 }
 interface State {
   count: number;
@@ -14,8 +14,8 @@ class HelloClass extends Component<Greeting, State> {
     count: 1
   };
   static defaultProps = {
-    firstName: 2,
-    lastName: 3
+    firstName: "2",
+    lastName: "3"
   };
 
   render() {
